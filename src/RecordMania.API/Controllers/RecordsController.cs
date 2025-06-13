@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RecordMania.Services.DTOs;
 using RecordMania.Services.Services;
 
 namespace RecordMania.API.Controllers;
@@ -28,6 +29,30 @@ public class RecordsController
         }
         catch (Exception ex)
         {
+            return Results.Problem(ex.Message);
+        }
+    }
+
+    [HttpPost]
+    [Route("/api/records")]
+    public async Task<IResult> CreateRecord(CreateRecordWithoutTask createRecordWithoutTask, CancellationToken cancellationToken)
+    {
+        try
+        {
+            await _service.CreateRecord(createRecordWithoutTask, cancellationToken);
+            return Results.Created();
+        }
+        catch (ArgumentException ex)
+        {
+            return Results.BadRequest(ex.Message);
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return Results.NotFound(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            throw;
             return Results.Problem(ex.Message);
         }
     }

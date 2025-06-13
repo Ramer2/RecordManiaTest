@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordMania.API", "src\RecordMania.API\RecordMania.API.csproj", "{65FBC733-9665-4099-A1D6-1B758754CB37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordMania.Services", "src\RecordMania.Services\RecordMania.Services.csproj", "{F72B7773-CA05-4010-8C3D-9859C607B05A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordMania.Models", "src\RecordMania.Models\RecordMania.Models.csproj", "{3FFECA55-C06B-4FE1-B6B3-4E5451B36A7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65FBC733-9665-4099-A1D6-1B758754CB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FBC733-9665-4099-A1D6-1B758754CB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FBC733-9665-4099-A1D6-1B758754CB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FBC733-9665-4099-A1D6-1B758754CB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F72B7773-CA05-4010-8C3D-9859C607B05A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72B7773-CA05-4010-8C3D-9859C607B05A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72B7773-CA05-4010-8C3D-9859C607B05A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72B7773-CA05-4010-8C3D-9859C607B05A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FFECA55-C06B-4FE1-B6B3-4E5451B36A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FFECA55-C06B-4FE1-B6B3-4E5451B36A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FFECA55-C06B-4FE1-B6B3-4E5451B36A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FFECA55-C06B-4FE1-B6B3-4E5451B36A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
